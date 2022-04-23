@@ -4,13 +4,14 @@ import java.util.Arrays;
 
 public class Homework_3 {
     public static void main(String[] args) {
-        changeNumPlace();
-        fillInArray();
-        multiplyByTwo();
-        fillInDiagonal();
-        fillInArr(5,7);
-        checkArrMaxAndMin();
-        System.out.println(checkArr(new int[]{1, 5, 2, 5, 5, 6, 2}));
+        //changeNumPlace();
+        //fillInArray();
+        //multiplyByTwo();
+        //fillInDiagonal();
+        //fillInArr(5,7);
+        //checkArrMaxAndMin();
+        //System.out.println(checkArr(new int[]{1, 5, 2, 5, 5, 6, 2}));
+        moveIndex(new int[]{1, 2, 3, 4, 5, 6, 7}, -2);
     }
 
     // Task 1
@@ -107,7 +108,18 @@ public class Homework_3 {
     }
 
     // Task 8
+    public static void moveIndex(int[] arr, int n) {
+        int buf;
 
+        for (int i = 0; i < arr.length-n; i++) {
+            for (int j = 0; j < arr.length - 1; j++) {
+                buf = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = buf;
+            }
+        }
+        System.out.println(Arrays.toString(arr));
+    }
 
 }
 
