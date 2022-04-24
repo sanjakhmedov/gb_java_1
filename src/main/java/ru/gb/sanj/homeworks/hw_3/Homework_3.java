@@ -4,14 +4,14 @@ import java.util.Arrays;
 
 public class Homework_3 {
     public static void main(String[] args) {
-        changeNumPlace();
-        fillInArray();
-        multiplyByTwo();
+        //changeNumPlace();
+        //fillInArray();
+        //multiplyByTwo();
         fillInDiagonal();
-        fillInArr(5,7);
-        checkArrMaxAndMin();
-        System.out.println(checkArr(new int[]{1, 5, 2, 5, 5, 6, 2}));
-        moveIndex(new int[]{1, 2, 3, 4, 5, 6, 7}, -2);
+        //fillInArr(5,7);
+        //checkArrMaxAndMin();
+        //System.out.println(checkArr(new int[]{1, 5, 2, 5, 5, 6, 2}));
+        //moveIndex(new int[]{1, 2, 3, 4, 5, 6, 7}, -2);
     }
 
     // Task 1
@@ -49,10 +49,10 @@ public class Homework_3 {
 
     // Task 4
     public static void fillInDiagonal() {
-        int[][] square = new int[7][7];
+        int[][] square = new int[7][9];
         for (int i = 0; i < square.length; i++) {
             for (int j = 0; j < square[i].length; j++) {
-                if (square[i] == square[j]) {
+                if (i == j) {
                     square[i][j] = 1;
                 }
                 System.out.print(square[i][j] + "  ");
