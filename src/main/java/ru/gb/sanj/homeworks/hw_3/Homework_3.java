@@ -7,7 +7,7 @@ public class Homework_3 {
         //changeNumPlace();
         //fillInArray();
         //multiplyByTwo();
-        fillInDiagonal();
+        //fillInDiagonal();
         //fillInArr(5,7);
         //checkArrMaxAndMin();
         //System.out.println(checkArr(new int[]{1, 5, 2, 5, 5, 6, 2}));
@@ -77,7 +77,7 @@ public class Homework_3 {
         int[] arr = {12, 20, 3, 9, 14, 8, 2, 19, 28, 10, 10, 17, 5, 19, 1};
         int min = arr[0];
         int max = arr[0];
-        for (int i = 0; i <= 14; i++) {
+        for (int i = 0; i <= arr.length; i++) {
             if (arr[i] < min) {
                 min = arr[i];
             }
